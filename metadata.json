@@ -1,0 +1,8 @@
+{
+  "name": "trinLearn",
+  "description": "A web application that uses the device camera to capture frames, sends them to an AI model for analysis, and displays the results. This mimics a live video analysis interface.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}
