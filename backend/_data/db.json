@@ -1,0 +1,161 @@
+{
+  "workItems": [
+    {
+      "id": "WO-001",
+      "type": "Work Order",
+      "title": "Monthly Maintenance - Pump A102",
+      "assetId": "PUMP-A102",
+      "assetName": "Coolant Pump A102",
+      "priority": "High",
+      "dueDate": "2024-05-22",
+      "status": "Open",
+      "assignedToUserId": "seed_user",
+      "description": "Perform standard monthly checks on Pump A102. Lubricate bearings, check seals for any leaks, and verify motor amperage. Ensure all safety guards are in place and functional. Report any anomalies found during the inspection.",
+      "location": "Sector 3, Bay 1A, Machine Line Alpha",
+      "tasks": [
+        {
+          "id": "t1-1",
+          "description": "Visually inspect pump casing for cracks or damage.",
+          "completed": false
+        },
+        {
+          "id": "t1-2",
+          "description": "Check and tighten all mounting bolts to specification.",
+          "completed": false
+        },
+        {
+          "id": "t1-3",
+          "description": "Lubricate motor bearings (Type X Grease, 2 shots).",
+          "completed": false
+        },
+        {
+          "id": "t1-4",
+          "description": "Inspect mechanical seal for any signs of leaks or wear.",
+          "completed": false
+        }
+      ],
+      "parts": [
+        {
+          "id": "p1-1",
+          "name": "Grease Cartridge Type X",
+          "partNumber": "GR-X-500ML",
+          "quantityRequired": 1
+        },
+        {
+          "id": "p1-2",
+          "name": "Cleaning Rags",
+          "partNumber": "RG-GEN-01",
+          "quantityRequired": 5
+        }
+      ],
+      "safetyProcedures": [
+        "Lock-Out/Tag-Out (LOTO) procedure MUST be applied before starting any work.",
+        "Use appropriate lifting techniques if removing heavy components."
+      ],
+      "hazards": [
+        "Electrical shock (High Voltage)",
+        "Rotating equipment (Entanglement)"
+      ],
+      "requiredPPE": [
+        "Safety glasses with side shields",
+        "Steel-toed boots",
+        "Gloves"
+      ],
+      "assetHistory": [
+        {
+          "id": "hist1-1",
+          "date": "2024-05-19",
+          "activityDescription": "Reported unusual noise during operation."
+        }
+      ]
+    },
+    {
+      "id": "INSP-001",
+      "type": "Inspection Round",
+      "title": "Safety Inspection - Zone C",
+      "assetName": "Manufacturing Zone C",
+      "priority": "High",
+      "dueDate": "2024-05-21",
+      "status": "In Progress",
+      "startTime": "2024-05-21T10:00:00.000Z",
+      "assignedToUserId": "seed_user",
+      "description": "Conduct a thorough safety inspection of Zone C.",
+      "location": "Zone C - All Areas",
+      "tasks": [
+        {
+          "id": "t2-1",
+          "description": "Verify all emergency exits are clear.",
+          "completed": true
+        },
+        {
+          "id": "t2-2",
+          "description": "Check fire extinguisher pressure gauges.",
+          "completed": false
+        }
+      ],
+      "parts": [],
+      "safetyProcedures": [
+        "Announce inspection to area supervisor before starting."
+      ],
+      "hazards": [
+        "General industrial hazards"
+      ],
+      "requiredPPE": [
+        "Safety glasses",
+        "High-visibility vest"
+      ],
+      "assetHistory": []
+    }
+  ],
+  "safetyPermits": {
+    "seed_user": [
+      {
+        "id": "permit-seed_user-loto-001",
+        "permitNumber": "LOTO-2024-001",
+        "title": "LOTO for Pump P-102 Motor Replacement",
+        "type": "Lock-out/Tag-out",
+        "assetId": "PUMP-P102",
+        "assetName": "Main Coolant Pump P-102",
+        "description": "Isolation of electrical and mechanical energy for motor replacement on Pump P-102 in Sector B. Follow SOP-LOTO-001.",
+        "issuedDate": "2024-05-20T10:00:00.000Z",
+        "expiryDate": "2024-05-27T10:00:00.000Z",
+        "assignedToUserId": "seed_user",
+        "status": "Pending Acknowledgement",
+        "responsiblePerson": "Jane Doe (Safety Officer)",
+        "specificInstructions": "Verify zero voltage at motor terminals after lockout.",
+        "detailedProcedures": [
+          "Isolate main breaker CB-102.",
+          "Lock and tag breaker."
+        ]
+      },
+      {
+        "id": "permit-seed_user-cs-001",
+        "permitNumber": "CS-2024-001",
+        "title": "Confined Space Entry - Tank T-201 Inspection",
+        "type": "Confined Space Entry",
+        "assetId": "TANK-T201",
+        "assetName": "Storage Tank T-201",
+        "description": "Internal inspection of Tank T-201 for integrity checks.",
+        "issuedDate": "2024-05-22T09:00:00.000Z",
+        "expiryDate": "2024-05-22T17:00:00.000Z",
+        "assignedToUserId": "seed_user",
+        "status": "Active",
+        "responsiblePerson": "John Smith (Area Supervisor)"
+      },
+      {
+        "id": "permit-seed_user-hw-001",
+        "permitNumber": "HW-2024-001",
+        "title": "Hot Work - Welding on Frame S-003",
+        "type": "Hot Work",
+        "assetId": "FRAME-S003",
+        "assetName": "Support Frame S-003",
+        "description": "Welding repair on support frame S-003 in Fabrication Area.",
+        "issuedDate": "2024-05-21T08:00:00.000Z",
+        "expiryDate": "2024-05-21T16:00:00.000Z",
+        "assignedToUserId": "seed_user",
+        "status": "Expired",
+        "responsiblePerson": "Mike Brown (Fab Supervisor)"
+      }
+    ]
+  }
+}

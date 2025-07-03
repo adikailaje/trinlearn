@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lens Live Video Analysis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif; /* A nice default sans-serif font often used with Tailwind */
+      background-color: #0D0D0D; /* Very dark charcoal */
+    }
+    /* For custom scrollbars with a dark theme */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1A1A1A; /* Dark panel background for track */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #dc2626; /* red-600 */
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #b91c1c; /* red-700 */
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@^18.2.0/client",
+    "@google/genai": "https://esm.sh/@google/genai@^0.14.0",
+    "react-dom/": "https://esm.sh/react-dom@^18.2.0/",
+    "react/": "https://esm.sh/react@^18.2.0/",
+    "@/App": "/App.tsx",
+    "@/components/Icons": "/components/Icons.tsx",
+    "@/pages/FloorPlanPage": "/pages/FloorPlanPage.tsx",
+    "@/pages/FloorPlanEditPage": "/pages/FloorPlanEditPage.tsx",
+    "@/pages/ManualAddMachinePage": "/pages/ManualAddMachinePage.tsx",
+    "qrcode.react": "https://esm.sh/qrcode.react@^3.1.0",
+    "@zxing/library": "https://esm.sh/@zxing/library@^0.21.0",
+    "@zxing/browser": "https://esm.sh/@zxing/browser@^0.1.5",
+    "@/components/ProgressBar": "/components/ProgressBar.tsx",
+    "@/components/StatCard": "/components/StatCard.tsx",
+    "@/components/PageHeader": "/components/PageHeader.tsx",
+    "@/services/floorPlanService": "/services/floorPlanService.ts",
+    "@/types": "/types.ts",
+    "@/contexts/LanguageContext": "/contexts/LanguageContext.tsx",
+    "@/hooks/useTranslation": "/hooks/useTranslation.ts",
+    "@/locales/": "/locales/",
+    "@/contexts/LiveInteractionContext": "/contexts/LiveInteractionContext.tsx",
+    "@/hooks/useLiveInteraction": "/hooks/useLiveInteraction.ts",
+    "vite": "https://esm.sh/vite@^7.0.0",
+    "path": "https://esm.sh/path@^0.12.7",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^4.6.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="text-neutral-200">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

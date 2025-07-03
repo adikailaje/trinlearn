@@ -1,0 +1,10 @@
+{
+  "name": "trin",
+  "description": "factory worker web app",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation",
+    "microphone"
+  ],
+  "prompt": ""
+}
